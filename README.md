@@ -2,9 +2,9 @@
 
 [HEADER]
 
-The [Perplexity Scraper](link) by Oxylabs allows developers to send prompts to Perplexity and automatically collect both AI-generated responses and structured metadata. Instead of just raw HTML, it can also provide results as parsed JSON, website PNG, XHR/Fetch requests, or Markdown output. 
+The [Perplexity Scraper](https://oxylabs.io/products/scraper-api/serp/perplexity) by Oxylabs allows developers to send prompts to Perplexity and automatically collect both AI-generated responses and structured metadata. Instead of just raw HTML, it can also provide results as parsed JSON, website PNG, XHR/Fetch requests, or Markdown output. 
 
-You can use the [Oxylabs’ Web Scraper API](link) with Perplexity for AI content auditing, research tracking, and analyzing SEO performance. It handles dynamic AI-generated content, fully supports real-time SERP extraction, and integrates seamlessly with Oxylabs' global proxy infrastructure, without the need to manage proxies, browsers, or worry about anti-bot systems.
+You can use the [Oxylabs’ Web Scraper API](https://oxylabs.io/products/scraper-api) with Perplexity for AI content auditing, research tracking, and analyzing SEO performance. It handles dynamic AI-generated content, fully supports real-time SERP extraction, and integrates seamlessly with Oxylabs' global proxy infrastructure, without the need to manage proxies, browsers, or worry about anti-bot systems.
 
 ## How it works
 
@@ -50,8 +50,8 @@ More request examples in different programming languages are available [here](li
 | `source`* | Sets the scraper | `perplexity` |
 | `prompt`* | The prompt or question to submit to Perplexity. | – |
 | `parse` | Returns parsed data when set to true. | `true` |
-| `geo_location` | Specify a country to send the prompt from. [More info](link). | – |
-| `callback_url` | URL to your callback endpoint. [More info](link). | – |
+| `geo_location` | Specify a country to send the prompt from. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/features/localization/proxy-location). | – |
+| `callback_url` | URL to your callback endpoint. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/integration-methods/push-pull#callback). | – |
 
 \* Mandatory parameters
 
@@ -90,7 +90,7 @@ Web Scraper API returns either an HTML document or a JSON object of Perplexity's
                     "How does the iPhone 16 Pro Max's pricing differ from Samsung and Google models",
                     "What factors should I consider when choosing among these top smartphones in 2025"
                 ],
-                "answer_results_md": [" answer in Markdown"],
+                "answer_results_md": ["answer in Markdown"],
                 "parse_status_code": 12000
             },
             "created_at": "2025-07-16 12:14:32",
@@ -111,7 +111,6 @@ You can find the full output example file [here](link-to-file-in-repo) in this r
 
 Alternatively, you can extract the data in the Markdown format for easier data integration workflows involving AI tools.
 
----
 
 ## JSON output structure
 
@@ -147,8 +146,6 @@ Structured Perplexity output includes fields such as `url`, `model`, `answer_res
 | `status_code` | The status code of the scraping job. [More info](link). | integer |
 | `parser_type` | The type of the parser used for breaking down the HTML content. | string |
 
----
-
 ## Additional results and inline products
 
 Along with the main AI response, Web Scraper API can return extra data under `additional_results`, such as:
@@ -168,23 +165,17 @@ Moreover, the `inline_products` array contains products that are directly embedd
 
 `(image-2.png)`
 
----
-
 ## Practical use cases
 
 1. **AI content auditing:** Compare quality, consistency, and reliability of Perplexity-generated responses.  
 2. **Research tracking:** Monitor how Perplexity summarizes or interprets information across time.  
 3. **SEO performance comparison:** Track your brand mentions and content rankings to optimize your visibility strategies.  
 
----
-
 ## Why choose Oxylabs?
 
 - **Superior success rates:** Experience the most reliable scraping even on high-profile and dynamic AI-driven sources.  
 - **Maintenance-free:** Our API handles all the infrastructure, from proxy management to IP rotation and anti-bot systems.  
 - **Dedicated support:** Get expert help whenever needed, from integration to debugging.  
-
----
 
 ## FAQ
 
@@ -200,14 +191,10 @@ No, the Perplexity Scraper can return multiple formats depending on your needs. 
 
 Since Perplexity responses are dynamically generated, requests can take longer than standard web scraping. We recommend setting a timeout of at least 180 seconds when using the Realtime integration method to avoid incomplete results. For larger or more complex prompts, consider asynchronous methods like Push-Pull.
 
----
-
 ## Learn more
 
-For a deeper dive into available parameters, advanced integrations, and additional examples, check out the [Perplexity Scraper documentation](link).
-
----
+For a deeper dive into available parameters, advanced integrations, and additional examples, check out the [Perplexity Scraper documentation](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/targets/perplexity).
 
 ## Contact us
 
-If you have questions or need support, reach out to us at [hello@oxylabs.io](mailto:hello@oxylabs.io) or through our [live chat](link).
+If you have questions or need support, reach out to us at [hello@oxylabs.io](mailto:hello@oxylabs.io) or through our [live chat](https://oxylabs.drift.click/oxybot).
