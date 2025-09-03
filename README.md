@@ -8,7 +8,7 @@ You can use the [Oxylabs’ Web Scraper API](https://oxylabs.io/products/scraper
 
 ## How it works
 
-The scraper handles the rendering, parsing, and delivery of results in any requested format. You need to provide your prompt, credentials, and a few optional parameters, as shown below.
+The Perplexity scraper handles the rendering, parsing, and delivery of results in any requested format. You need to provide your prompt, credentials, and a few optional parameters, as shown below.
 
 ### Request sample (Python)
 
@@ -39,7 +39,7 @@ with open('response.json', 'w') as file:
     json.dump(response.json(), file, indent=2)
 ```
 
-More request examples in different programming languages are available [here](link-to-output-file-in-the-repo).
+More request examples in different programming languages are available [here](https://github.com/oxylabs/perplexity-scraper/tree/main/Code%20examples).
 
 **Note:** By default, all requests to Perplexity use JavaScript rendering. Make sure to set a sufficient timeout (e.g. 180s) when using the Realtime integration method.
 
@@ -47,7 +47,7 @@ More request examples in different programming languages are available [here](li
 
 | Parameter | Description | Default value |
 |-----------|-------------|---------------|
-| `source`* | Sets the scraper | `perplexity` |
+| `source`* | Sets the Perplexity scraper | `perplexity` |
 | `prompt`* | The prompt or question to submit to Perplexity. | – |
 | `parse` | Returns parsed data when set to true. | `true` |
 | `geo_location` | Specify a country to send the prompt from. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/features/localization/proxy-location). | – |
@@ -59,11 +59,11 @@ More request examples in different programming languages are available [here](li
 
 ### Output samples
 
-Web Scraper API returns either an HTML document or a JSON object of Perplexity's output, which contains structured data from the results page.
+Web Scraper API returns either an HTML document or a JSON object of Perplexity scraper output, which contains structured data from the results page.
 
 **HTML example:**
 
-`(image.png file)`
+![HTML Example](image.png)
 
 **Structured JSON output snippet:**
 
@@ -107,14 +107,13 @@ Web Scraper API returns either an HTML document or a JSON object of Perplexity's
 }
 ```
 
-You can find the full output example file [here](link-to-file-in-repo) in this repository.  
+You can find the full output example file [here](output-perplexity-scraper.json) in this repository.  
 
 Alternatively, you can extract the data in the Markdown format for easier data integration workflows involving AI tools.
 
-
 ## JSON output structure
 
-Structured Perplexity output includes fields such as `url`, `model`, `answer_results`, and more. The table below breaks down the page elements we parse, along with descriptions, data types, and relevant metadata.
+Structured Perplexity scraper output includes fields such as `url`, `model`, `answer_results`, and more. The table below breaks down the page elements we parse, along with descriptions, data types, and relevant metadata.
 
 **Note:** The number of items and fields for a specific result type may vary depending on the submitted prompt.
 
@@ -143,12 +142,12 @@ Structured Perplexity output includes fields such as `url`, `model`, `answer_res
 | `updated_at` | The timestamp when the scraping job was finished. | timestamp |
 | `job_id` | The ID of the job associated with the scraping job. | string |
 | `geo_location` | Proxy location from which the prompt was submitted. | string |
-| `status_code` | The status code of the scraping job. [More info](link). | integer |
+| `status_code` | The status code of the scraping job. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/response-codes). | integer |
 | `parser_type` | The type of the parser used for breaking down the HTML content. | string |
 
 ## Additional results and inline products
 
-Along with the main AI response, Web Scraper API can return extra data under `additional_results`, such as:
+Along with the main AI response, the Perplexity scraper can return extra data under `additional_results`, such as:
 
 - `images_results`
 - `sources_results`
@@ -159,13 +158,13 @@ Along with the main AI response, Web Scraper API can return extra data under `ad
 
 These arrays are extracted from the tabs on the original results page and are included only if relevant content is available:
 
-`(image-1.png)`
+![Perplexity tabs](image-1.png)
 
 Moreover, the `inline_products` array contains products that are directly embedded in the response:
 
-`(image-2.png)`
+![Embedded results](image-2.png)
 
-## Practical use cases
+## Practical Perplexity scraper use cases
 
 1. **AI content auditing:** Compare quality, consistency, and reliability of Perplexity-generated responses.  
 2. **Research tracking:** Monitor how Perplexity summarizes or interprets information across time.  
@@ -185,7 +184,7 @@ Perplexity does not provide a public API for all its features, so scraping falls
 
 ### Does the scraper return only JSON?
 
-No, the Perplexity Scraper can return multiple formats depending on your needs. The scraper can return results as raw HTML, structured JSON, Markdown output, website PNG, or capture XHR/Fetch requests.
+No, the Perplexity scraper can return multiple formats depending on your needs. The scraper can return results as raw HTML, structured JSON, Markdown output, website PNG, or capture XHR/Fetch requests.
 
 ### What’s the recommended timeout for real-time requests?
 
