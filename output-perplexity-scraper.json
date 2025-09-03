@@ -1,0 +1,375 @@
+{
+  "results": [
+    {
+      "content": {
+        "url": "https://www.perplexity.ai/search/top-3-smartphones-in-2025-comp-wvA0dso7TgW3NpgF8Jd8tg",
+        "model": "turbo",
+        "top_images": [
+          {
+            "url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/cca0fd5c-8a96-543c-89ff-3191b4be9c42/57288799-40bc-5d1f-90fe-b936b0a65cd1.jpg",
+            "title": "Top Smartphones of 2025 with AI-Driven Features"
+          },
+          {
+            "url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/2cc6543a-e4ef-594b-801f-c5b60308c33a/aec8f940-3469-5597-816f-0dd903b3407c.jpg",
+            "title": "The best phone 2025: top smartphones in the US right now ..."
+          },
+          {
+            "url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/26dedbf8-baca-5d1f-ac97-bd70b76c61a3/aec8f940-3469-5597-816f-0dd903b3407c.jpg",
+            "title": "Best phones 2025 tested \u2014 Our top picks | Tom's Guide"
+          },
+          {
+            "url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/0a3be7b1-a63d-5c96-b3f5-10b3ab84249c/6a4747ad-0c64-581e-8c1d-a7d907f27628.jpg",
+            "title": "Best phones to buy in 2025 reviewed and ranked | Stuff"
+          }
+        ],
+        "top_sources": [
+          {
+            "url": "https://www.youtube.com/watch?v=EYMe2jy-urg",
+            "title": "Top 5 BEST Smartphones of 2025\u2026 So Far - YouTube",
+            "source": "youtube"
+          },
+          {
+            "url": "https://www.zdnet.com/article/best-phone/",
+            "title": "The best phones to buy in 2025 - ZDNET",
+            "source": "ZDNET"
+          },
+          {
+            "url": "https://www.tomsguide.com/best-picks/best-phones",
+            "title": "Best phones 2025 tested \u2014 Our top picks | Tom's Guide",
+            "source": "Tom's Guide"
+          },
+          {
+            "url": "https://www.wired.com/story/best-cheap-phones/",
+            "title": "8 Best Cheap Phones (2025), Tested and Reviewed - WIRED",
+            "source": "WIRED"
+          }
+        ],
+        "prompt_query": "top 3 smartphones in 2025, compare pricing across US marketplaces",
+        "answer_results": [
+          "The top 3 smartphones in 2025 based on expert reviews and market consensus are:",
+          {
+            "list": [
+              [
+                [
+                  [
+                    "Samsung Galaxy S25 Ultra"
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    "Apple iPhone 16 Pro Max"
+                  ]
+                ]
+              ],
+              [
+                [
+                  [
+                    "Google Pixel 9 Pro XL"
+                  ],
+                  " (or alternatively the Pixel 9a as a value option)"
+                ]
+              ]
+            ]
+          },
+          "Pricing Comparison Across US Marketplaces (Approximate MSRP & Market Prices):",
+          {
+            "table": [
+              {
+                "table_columns": [
+                  [
+                    "Smartphone Model"
+                  ],
+                  [
+                    "MSRP (Official)"
+                  ],
+                  [
+                    "Amazon Price (2025)"
+                  ],
+                  [
+                    "T-Mobile Price (2025)"
+                  ],
+                  [
+                    "Notes"
+                  ]
+                ]
+              },
+              {
+                "table_rows": [
+                  [
+                    [
+                      "Samsung Galaxy S25 Ultra"
+                    ],
+                    [
+                      "$1,300"
+                    ],
+                    [
+                      "Around $949.50 (256GB)"
+                    ],
+                    [
+                      "Around $830 - $1,000"
+                    ],
+                    [
+                      "Prices vary by storage, with deals around $950 for 256GB variants; offers S Pen and premium camera features[2][11][12]"
+                    ]
+                  ],
+                  [
+                    [
+                      "Apple iPhone 16 Pro Max"
+                    ],
+                    [
+                      "$1,200"
+                    ],
+                    [
+                      "Around $1,200"
+                    ],
+                    [
+                      "$830 (iPhone 16 base)"
+                    ],
+                    [
+                      "Pro Max model typically $1,200 MSRP; iPhone 16 base model available around $830 at carriers[2][10]"
+                    ]
+                  ],
+                  [
+                    [
+                      "Google Pixel 9 Pro XL"
+                    ],
+                    [
+                      "$900"
+                    ],
+                    [
+                      "Not specifically listed"
+                    ],
+                    [
+                      "N/A"
+                    ],
+                    [
+                      "MSRP $900; Pixel 9a variant offers strong value under $500[2][4][10]"
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "Notes on these smartphones:",
+          {
+            "list": [
+              [
+                "Samsung Galaxy S25 Ultra",
+                " is considered the best overall phone with a large 6.9\" display, powerful Snapdragon 8 Elite processor, 5,000mAh battery, versatile cameras including 200MP sensor, and built-in S Pen productivity features. It commands a premium price but can be found with discounts below MSRP on platforms like Amazon and T-Mobile[2][12]."
+              ],
+              [
+                "Apple iPhone 16 Pro Max",
+                " stands as the best iPhone with Apple's A18 Pro Bionic chip, a similarly large 6.9\" screen, and up to 1TB storage, priced around $1,200 MSRP. Carrier deals can sometimes bring the effective cost lower for the base iPhone 16 (not Pro Max)[2][10]."
+              ],
+              [
+                "Google Pixel 9 Pro XL",
+                " offers a solid camera and software experience with Google\u2019s Tensor G4 chip at a lower price point (~$900). For those seeking excellent value, the Pixel 9a offers impressive cameras and performance under $500 but is not a flagship competitor[2][4]."
+              ]
+            ]
+          },
+          "Marketplaces Overview:",
+          {
+            "list": [
+              [
+                [
+                  [
+                    "Amazon"
+                  ],
+                  " typically offers slightly discounted flagship prices\u2014Samsung Galaxy S25 Ultra (256GB) found near $949.50, OnePlus 13 and other flagships similarly discounted[11][12]."
+                ]
+              ],
+              [
+                [
+                  [
+                    "Carrier stores like T-Mobile"
+                  ],
+                  " sometimes provide financing and promotional prices\u2014iPhone 16 starting near $830 with plans, Samsung Galaxy S25 varies but can approach MSRP or lower under contracts[10][11]."
+                ]
+              ],
+              [
+                "Other marketplaces (Best Buy, Walmart) generally align with Amazon and carrier pricing but may vary with bundles and seasonal promotions."
+              ]
+            ]
+          },
+          "In summary, the premium flagship tier in 2025 centers around the Samsung Galaxy S25 Ultra and Apple iPhone 16 Pro Max, with Google\u2019s Pixel 9 Pro XL key as a powerful, slightly more affordable flagship alternative. Pricing varies but flagship devices routinely range from $900 to $1,300 in the US market, with discounts commonly available through Amazon and carriers[2][10][11][12].",
+          {
+            "enumerated_references": [
+              {
+                "num": 1,
+                "url": "https://www.youtube.com/watch?v=EYMe2jy-urg"
+              },
+              {
+                "num": 2,
+                "url": "https://www.zdnet.com/article/best-phone/"
+              },
+              {
+                "num": 3,
+                "url": "https://www.tomsguide.com/best-picks/best-phones"
+              },
+              {
+                "num": 4,
+                "url": "https://www.wired.com/story/best-cheap-phones/"
+              },
+              {
+                "num": 5,
+                "url": "https://www.techradar.com/news/best-phone"
+              },
+              {
+                "num": 6,
+                "url": "https://www.counterpointresearch.com/insight/top-10-bestselling-smartphones-q1-2025/"
+              },
+              {
+                "num": 7,
+                "url": "https://uptradeit.com/blog/what-iphones-will-stop-working"
+              },
+              {
+                "num": 8,
+                "url": "https://www.stuff.tv/features/best-phone/"
+              },
+              {
+                "num": 9,
+                "url": "https://www.youtube.com/watch?v=93wZbN9tecs"
+              },
+              {
+                "num": 10,
+                "url": "https://www.cnet.com/tech/mobile/best-phone/"
+              },
+              {
+                "num": 11,
+                "url": "https://www.pcmag.com/picks/the-best-phones"
+              },
+              {
+                "num": 12,
+                "url": "https://www.gsmarena.com/best_flagship_phones_buyers_guide-review-2027.php"
+              }
+            ]
+          }
+        ],
+        "displayed_tabs": [
+          "search",
+          "images",
+          "sources"
+        ],
+        "related_queries": [
+          "How do the prices of the top 3 smartphones compare across US marketplaces",
+          "What features make the Galaxy S25 Ultra stand out as the best in 2025",
+          "Why is the Pixel 9a considered a top budget option despite its lower price",
+          "How does the iPhone 16 Pro Max's pricing differ from Samsung and Google models",
+          "What factors should I consider when choosing among these top smartphones in 2025"
+        ],
+        "answer_results_md": "\nThe top 3 smartphones in 2025 based on expert reviews and market consensus are:\n\n1. **Samsung Galaxy S25 Ultra**\n2. **Apple iPhone 16 Pro Max**\n3. **Google Pixel 9 Pro XL** (or alternatively the Pixel 9a as a value option)\n\n### Pricing Comparison Across US Marketplaces (Approximate MSRP & Market Prices):\n\n| Smartphone Model        | MSRP (Official) | Amazon Price (2025) | T-Mobile Price (2025)  | Notes                        |\n|------------------------|-----------------|---------------------|-----------------------|------------------------------|\n| Samsung Galaxy S25 Ultra| $1,300          | Around $949.50 (256GB)| Around $830 - $1,000  | Prices vary by storage, with deals around $950 for 256GB variants; offers S Pen and premium camera features[2][11][12]|\n| Apple iPhone 16 Pro Max | $1,200          | Around $1,200         | $830 (iPhone 16 base)  | Pro Max model typically $1,200 MSRP; iPhone 16 base model available around $830 at carriers[2][10]|\n| Google Pixel 9 Pro XL   | $900            | Not specifically listed | N/A                   | MSRP $900; Pixel 9a variant offers strong value under $500[2][4][10]|\n\n### Notes on these smartphones:\n\n- **Samsung Galaxy S25 Ultra** is considered the best overall phone with a large 6.9\" display, powerful Snapdragon 8 Elite processor, 5,000mAh battery, versatile cameras including 200MP sensor, and built-in S Pen productivity features. It commands a premium price but can be found with discounts below MSRP on platforms like Amazon and T-Mobile[2][12].\n\n- **Apple iPhone 16 Pro Max** stands as the best iPhone with Apple's A18 Pro Bionic chip, a similarly large 6.9\" screen, and up to 1TB storage, priced around $1,200 MSRP. Carrier deals can sometimes bring the effective cost lower for the base iPhone 16 (not Pro Max)[2][10].\n\n- **Google Pixel 9 Pro XL** offers a solid camera and software experience with Google\u2019s Tensor G4 chip at a lower price point (~$900). For those seeking excellent value, the Pixel 9a offers impressive cameras and performance under $500 but is not a flagship competitor[2][4].\n\n### Marketplaces Overview:\n\n- **Amazon** typically offers slightly discounted flagship prices\u2014Samsung Galaxy S25 Ultra (256GB) found near $949.50, OnePlus 13 and other flagships similarly discounted[11][12].\n- **Carrier stores like T-Mobile** sometimes provide financing and promotional prices\u2014iPhone 16 starting near $830 with plans, Samsung Galaxy S25 varies but can approach MSRP or lower under contracts[10][11].\n- Other marketplaces (Best Buy, Walmart) generally align with Amazon and carrier pricing but may vary with bundles and seasonal promotions.\n\nIn summary, the premium flagship tier in 2025 centers around the Samsung Galaxy S25 Ultra and Apple iPhone 16 Pro Max, with Google\u2019s Pixel 9 Pro XL key as a powerful, slightly more affordable flagship alternative. Pricing varies but flagship devices routinely range from $900 to $1,300 in the US market, with discounts commonly available through Amazon and carriers[2][10][11][12].\n\n[1] https://www.youtube.com/watch?v=EYMe2jy-urg\n[2] https://www.zdnet.com/article/best-phone/\n[3] https://www.tomsguide.com/best-picks/best-phones\n[4] https://www.wired.com/story/best-cheap-phones/\n[5] https://www.techradar.com/news/best-phone\n[6] https://www.counterpointresearch.com/insight/top-10-bestselling-smartphones-q1-2025/\n[7] https://uptradeit.com/blog/what-iphones-will-stop-working\n[8] https://www.stuff.tv/features/best-phone/\n[9] https://www.youtube.com/watch?v=93wZbN9tecs\n[10] https://www.cnet.com/tech/mobile/best-phone/\n[11] https://www.pcmag.com/picks/the-best-phones\n[12] https://www.gsmarena.com/best_flagship_phones_buyers_guide-review-2027.php\n",
+        "parse_status_code": 12000,
+        "additional_results": {
+          "images_results": [
+            {
+              "title": "Top Smartphones of 2025 with AI-Driven Features",
+              "image_url": "https://img-cdn.thepublive.com/filters:format(webp)/industry-wired/media/media_files/2025/01/04/A9hU8NmTl0weavNM5Cmb.jpg",
+              "image_from_url": "https://industrywired.com/ai/top-smartphones-of-2025-with-ai-driven-features-8590046"
+            },
+            {
+              "title": "The best phone 2025: top smartphones in the US right now ...",
+              "image_url": "https://cdn.mos.cms.futurecdn.net/CuSm3XePuDdXHxmbeoZF8M.jpg",
+              "image_from_url": "https://www.techradar.com/news/best-phone"
+            },
+            {
+              "title": "Best phones 2025 tested \u2014 Our top picks | Tom's Guide",
+              "image_url": "https://cdn.mos.cms.futurecdn.net/M4nigVN3vvA5EEnNX9atxY.jpg",
+              "image_from_url": "https://www.tomsguide.com/best-picks/best-phones"
+            },
+            {
+              "title": "Best phones to buy in 2025 reviewed and ranked | Stuff",
+              "image_url": "https://www.stuff.tv/wp-content/uploads/sites/2/2024/07/Best-smartphones-on-sale-2024-lead.jpg",
+              "image_from_url": "https://www.stuff.tv/features/best-phone/"
+            },
+            {
+              "title": "The best mid-range phones to buy in 2025 - PhoneArena",
+              "image_url": "https://m-cdn.phonearena.com/images/article/133911-wide-two_1200/The-best-mid-range-phones-to-buy-in-2025.jpg",
+              "image_from_url": "https://www.phonearena.com/news/best-mid-range-phones_id133911"
+            },
+            {
+              "title": "The best smartphones of 2025, tried and tested \u2013 but are ...",
+              "image_url": "https://www.telegraph.co.uk/content/dam/recommended/2025/05/20/TELEMMGLPICT000425244583_17477562398800_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpeg?imwidth=640",
+              "image_from_url": "https://www.telegraph.co.uk/recommended/tech/best-smartphones/"
+            },
+            {
+              "title": "Best Phones in 2025 | Top-Rated Smartphones and Cellphones ...",
+              "image_url": "https://www.cnet.com/a/img/resize/b84fd97fe29bbe2ec4d397caf63db53bf8bea241/hub/2022/03/30/e841545d-e55c-47fc-b24a-003bf14e58c8/oneplus-10-pro-cnet-review-12.jpg?auto=webp&fit=crop&height=900&width=1200",
+              "image_from_url": "https://www.cnet.com/tech/mobile/best-phone/"
+            },
+            {
+              "title": "The 7 Best Smartphones to Buy in 2025 - Best Smartphone Reviews",
+              "image_url": "https://hips.hearstapps.com/hmg-prod/images/best-smartphones-2025-67afc62def800.jpg?crop=0.503xw:0.671xh;0.338xw,0.218xh&resize=1120:*",
+              "image_from_url": "https://www.bestproducts.com/tech/electronics/g60318873/best-smartphones/"
+            },
+            {
+              "title": "Which Smartphones Are Most Popular in 2025? The Winner Might ...",
+              "image_url": "https://i.pcmag.com/imagery/articles/00lQQsbajdRLVSbeeBwioC0-2.fit_lim.size_1050x.webp",
+              "image_from_url": "https://www.pcmag.com/news/2025-smartphone-sales-rankings-reveal-a-surprise-leader-and-a-red-flag"
+            }
+          ],
+          "sources_results": [
+            {
+              "url": "https://www.youtube.com/watch?v=EYMe2jy-urg",
+              "title": "Top 5 BEST Smartphones of 2025\u2026 So Far - YouTube"
+            },
+            {
+              "url": "https://www.zdnet.com/article/best-phone/",
+              "title": "The best phones to buy in 2025 - ZDNET"
+            },
+            {
+              "url": "https://www.tomsguide.com/best-picks/best-phones",
+              "title": "Best phones 2025 tested \u2014 Our top picks | Tom's Guide"
+            },
+            {
+              "url": "https://www.wired.com/story/best-cheap-phones/",
+              "title": "8 Best Cheap Phones (2025), Tested and Reviewed - WIRED"
+            },
+            {
+              "url": "https://www.techradar.com/news/best-phone",
+              "title": "The best phone 2025: top smartphones in the US right now"
+            },
+            {
+              "url": "https://www.counterpointresearch.com/insight/top-10-bestselling-smartphones-q1-2025/",
+              "title": "iPhone 16 Leads Global Smartphone Sales in Q1 2025"
+            },
+            {
+              "url": "https://uptradeit.com/blog/what-iphones-will-stop-working",
+              "title": "What iPhones Will Stop Working in 2025 - UpTrade"
+            },
+            {
+              "url": "https://www.stuff.tv/features/best-phone/",
+              "title": "Best phones to buy in 2025 reviewed and ranked - Stuff"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=93wZbN9tecs",
+              "title": "Best Phones of 2025 (so far) | Mid-Range, Camera, Gaming & More"
+            },
+            {
+              "url": "https://www.cnet.com/tech/mobile/best-phone/",
+              "title": "Best Phones in 2025 | Top-Rated Smartphones and ... - CNET"
+            },
+            {
+              "url": "https://www.pcmag.com/picks/the-best-phones",
+              "title": "The Best Phones We've Tested (July 2025) - PCMag"
+            },
+            {
+              "url": "https://www.gsmarena.com/best_flagship_phones_buyers_guide-review-2027.php",
+              "title": "Best flagship phones 2025 - buyer's guide - GSMArena.com tests"
+            }
+          ]
+        }
+      },
+      "created_at": "2025-07-16 12:14:32",
+      "updated_at": "2025-07-16 12:15:28",
+      "page": 1,
+      "url": "https://www.perplexity.ai/search/top-3-smartphones-in-2025-comp-wvA0dso7TgW3NpgF8Jd8tg",
+      "job_id": "7351222707934990337",
+      "is_render_forced": false,
+      "status_code": 200,
+      "parser_type": "perplexity",
+      "parser_preset": null
+    }
+  ]
+}
