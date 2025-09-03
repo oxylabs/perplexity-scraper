@@ -1,0 +1,9 @@
+curl 'https://realtime.oxylabs.io/v1/queries' \
+--user 'USERNAME:PASSWORD' \
+-H 'Content-Type: application/json' \
+-d '{
+        "source": "perplexity",
+        "prompt": "top 3 smartphones in 2025, compare pricing across US marketplaces",
+        "geo_location": "United States",
+        "parse": true
+    }'
