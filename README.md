@@ -1,6 +1,6 @@
 # Perplexity Scraper
 
-[![Oxylabs promo code](https://raw.githubusercontent.com/oxylabs/perplexity-scraper/refs/heads/main/ScraperAPI%2BPerplexity-1090x275px.png?token=GHSAT0AAAAAADGKHWR62RMWBERSDN42LUK22F2UGZA)](https://oxylabs.io/products/scraper-api/serp/perplexity?utm_source=877&utm_medium=affiliate&groupid=877&utm_content=perplexity-scraper-github&transaction_id=102f49063ab94276ae8f116d224b67)
+[![Oxylabs promo code](https://github.com/oxylabs/perplexity-scraper/blob/main/ScraperAPI%2BPerplexity-1090x275px.png)](https://oxylabs.io/products/scraper-api/serp/perplexity?utm_source=877&utm_medium=affiliate&groupid=877&utm_content=perplexity-scraper-github&transaction_id=102f49063ab94276ae8f116d224b67)
 
 [![](https://dcbadge.vercel.app/api/server/eWsVUJrnG5)](https://discord.gg/GbxmdGhZjq)
 
