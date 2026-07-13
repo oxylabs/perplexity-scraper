@@ -51,8 +51,8 @@ More request examples in different programming languages are available [here](ht
 | Parameter | Description | Default value |
 |-----------|-------------|---------------|
 | `source`* | Sets the Perplexity scraper | `perplexity` |
-| `prompt`* | The prompt or question to submit to Perplexity. | – |
-| `parse` | Returns parsed data when set to true. | `true` |
+| `prompt`* | The prompt or question to submit to Perplexity. Max 8000 characters. | – |
+| `parse` | Returns parsed data when set to true. | `false` |
 | `geo_location` | Specify a country to send the prompt from. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/features/localization/proxy-location). | – |
 | `callback_url` | URL to your callback endpoint. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/integration-methods/push-pull#callback). | – |
 
@@ -72,41 +72,53 @@ Web Scraper API returns either an HTML document or a JSON object of Perplexity s
 
 ```json
 {
-    "results": [
-        {
-            "content": {
-                "url": "https://www.perplexity.ai/search/top-3-smartphones-in-2025-comp-wvA0dso7TgW3NpgF8Jd8tg",
-                "model": "turbo",
-                "top_images": ["url + title"],
-                "top_sources": ["url + title + source"],
-                "prompt_query": "top 3 smartphones in 2025, compare pricing across US marketplaces",
-                "answer_results": ["answer in JSON"],
-                "displayed_tabs": [
-                    "search",
-                    "images",
-                    "sources"
-                ],
-                "related_queries": [                
-                    "How do the prices of the top 3 smartphones compare across US marketplaces",
-                    "What features make the Galaxy S25 Ultra stand out as the best in 2025",
-                    "Why is the Pixel 9a considered a top budget option despite its lower price",
-                    "How does the iPhone 16 Pro Max's pricing differ from Samsung and Google models",
-                    "What factors should I consider when choosing among these top smartphones in 2025"
-                ],
-                "answer_results_md": ["answer in Markdown"],
-                "parse_status_code": 12000
+  "results": [
+    {
+      "job_id": "7470032181138587649",
+      "status_code": 200,
+      "url": "https://www.perplexity.ai/search/915bee3e-2d59-48ba-8b19-701f527c9b60",
+      "content": {
+        "prompt_query": "best supplements for better sleep",
+        "model": "turbo",
+        "answer_results": [
+          "Here are the most evidence-supported supplements people typically try for better sleep—plus who they're best for and key safety notes.",
+          "Best-supported options (start here)",
+          ...
+        ],
+        "answer_results_md": "\nHere are the most evidence-supported supplements people typically try for better sleep—plus who they're best for and key safety notes.\n\nBest-supported options (start here)\n-----------------------------------\n\n...",
+        "additional_results": {
+          "sources_results": [
+            {
+              "title": "Best Supplements and Habits for Better Sleep (20 min.)",
+              "url": "https://coopercomplete.com/blog/best-supplements-for-better-sleep/"
             },
-            "created_at": "2025-07-16 12:14:32",
-            "updated_at": "2025-07-16 12:15:28",
-            "page": 1,
-            "url": "https://www.perplexity.ai/search/top-3-smartphones-in-2025-comp-wvA0dso7TgW3NpgF8Jd8tg",
-            "job_id": "7351222707934990337",
-            "is_render_forced": false,
-            "status_code": 200,
-            "parser_type": "perplexity",
-            "parser_preset": null
-        }
-    ]
+            {
+              "title": "Sleep Better With These 9 Sleep Supplements",
+              "url": "https://drruscio.com/sleep-supplements/"
+            },
+            {
+              "title": "10 Best Supplements for Sleep Support: A Dietitian's Picks",
+              "url": "https://letsliveitup.com/blogs/supergreens/best-sleep-supplements"
+            },
+            ...
+          ]
+        },
+        "related_queries": [
+          "Which sleep aids have the strongest evidence in adults",
+          "How to cycle supplements for sleep without tolerance",
+          "What are safest melatonin dosing guidelines for adults",
+          "Lifestyle tweaks to maximize sleep while using supplements"
+        ],
+        "displayed_tabs": [
+          "Answer",
+          "Links",
+          "Images"
+        ],
+        "url": "https://www.perplexity.ai/search/915bee3e-2d59-48ba-8b19-701f527c9b60",
+        "parse_status_code": 12000
+      }
+    }
+  ]
 }
 ```
 
@@ -120,33 +132,22 @@ Structured Perplexity scraper output includes fields such as `url`, `model`, `an
 
 **Note:** The number of items and fields for a specific result type may vary depending on the submitted prompt.
 
-| Field | Description | Type |
-|-------|-------------|------|
-| `url` | The URL of Perplexity's conversation. | string |
-| `page` | Page number. | integer |
-| `content` | An object containing parsed Perplexity page data. | object |
-| `model` | Perplexity model used to generate the answer. | string |
-| `prompt_query` | The original prompt submitted to Perplexity. | string |
-| `displayed_tabs` | Tabs displayed in Perplexity's interface (e.g., shopping, images). | list |
-| `answer_results` | The complete Perplexity response containing text or nested content. | list/string |
-| `answer_results_md` | The entire answer rendered in Markdown format. | string |
-| `related_queries` | A list of queries related to the main prompt. | list |
-| `top_images` | A list of top images with their titles and URLs. | array |
-| `top_sources` | A list of top cited sources with their titles, sources, and URLs. | array |
-| `inline_products` | A list of inline products with titles, prices, links, and other metadata. | array |
-| `additional_results.hotels_results` | A list of hotels with titles, URLs, addresses, and other hotel details. | array |
-| `additional_results.places_results` | A list of places with titles, URLs, coordinates, and other metadata. | array |
-| `additional_results.videos_results` | A list of videos with thumbnails, titles, URLs, and sources. | array |
-| `additional_results.shopping_results` | A list of shopping items with titles, prices, URLs, and other product metadata. | array |
-| `additional_results.sources_results` | A list of cited sources with their titles and URLs. | array |
-| `additional_results.images_results` | A list of related images with titles, image URLs, and source page URLs. | array |
-| `parse_status_code` | Status code of the parsing operation. | integer |
-| `created_at` | The timestamp when the scraping job was created. | timestamp |
-| `updated_at` | The timestamp when the scraping job was finished. | timestamp |
-| `job_id` | The ID of the job associated with the scraping job. | string |
-| `geo_location` | Proxy location from which the prompt was submitted. | string |
-| `status_code` | The status code of the scraping job. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/response-codes). | integer |
-| `parser_type` | The type of the parser used for breaking down the HTML content. | string |
+| Key Name | Description | Type |
+|---|---|---|
+| `prompt_query` | Submitted prompt or search query. | string |
+| `model` | Perplexity model used for the response (e.g., `turbo`). | string |
+| `answer_results` | Generated answer as Markdown JSON tree. | array |
+| `answer_results_md` | Generated answer in Markdown. | string |
+| `additional_results`* | Grouped UI elements containing `sources_results`, `images_results`, `shopping_results`, etc. | object |
+| `top_images`* | Perplexity image results on the "Images" tab. Objects include `url` and `title`. | array |
+| `top_sources`* | Perplexity top-ranked source results. Objects include `url`, `title`, and `source`. | array |
+| `inline_products`* | Shopping results triggered by product-related queries. | array |
+| `related_queries`* | Suggested follow-up questions by Perplexity. | array of strings |
+| `displayed_tabs` | UI tabs visible on the parsed page (e.g., Answer, Links, Images). | array of strings |
+| `url` | The URL of the Perplexity search page for this query. | string |
+| `parse_status_code` | `12000` – successful. Otherwise, parser failed to extract structured fields. | integer |
+
+\* — conditional, returned only when content is in the LLM's response.
 
 ## Additional results and inline products
 
