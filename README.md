@@ -13,6 +13,9 @@ You can use the [Oxylabs’ Web Scraper API](https://oxylabs.io/products/scraper
 
 The Perplexity scraper handles the rendering, parsing, and delivery of results in any requested format. You need to provide your prompt, credentials, and a few optional parameters, as shown below.
 
+> [!TIP]
+> Get a free trial of Oxylabs **Web Scraper API** by registering on the [Dashboard](https://dashboard.oxylabs.io/en/registration).
+
 ### Request sample (Python)
 
 ```python
