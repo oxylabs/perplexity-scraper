@@ -183,8 +183,6 @@ Moreover, the `inline_products` array contains products that are directly embedd
 - **Maintenance-free:** Our API handles all the infrastructure, from proxy management to IP rotation and anti-bot systems.  
 - **Dedicated support:** Get expert help whenever needed, from integration to debugging.  
 
-[![Oxylabs promo code](https://github.com/oxylabs/agent-skills/blob/main/Github%20repositories%20banner%20v1%402x.png)](https://x.com/Oxylabs_io)
-
 ## FAQ
 
 ### Is scraping Perplexity AI allowed?
