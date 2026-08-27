@@ -18,12 +18,13 @@ namespace OxyApi
                 source = "perplexity",
                 prompt = "top 3 smartphones in 2025, compare pricing across US marketplaces",
                 geo_location = "United States",
-                parse = true
+                parse = true,
+                callback_url = "https://your-server.com/oxylabs-callback"
             };
 
             var client = new HttpClient();
 
-            Uri baseUri = new Uri("https://realtime.oxylabs.io");
+            Uri baseUri = new Uri("https://data.oxylabs.io");
             client.BaseAddress = baseUri;
 
             var requestMessage = new HttpRequestMessage(HttpMethod.Post, "/v1/queries");
