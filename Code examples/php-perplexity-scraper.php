@@ -4,12 +4,13 @@ $params = array(
     'source' => 'perplexity',
     'prompt' => 'top 3 smartphones in 2025, compare pricing across US marketplaces',
     'geo_location' => 'United States',
-    'parse' => true
+    'parse' => true,
+    'callback_url' => 'https://your-server.com/oxylabs-callback'
 );
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://realtime.oxylabs.io/v1/queries");
+curl_setopt($ch, CURLOPT_URL, "https://data.oxylabs.io/v1/queries");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
 curl_setopt($ch, CURLOPT_POST, 1);
