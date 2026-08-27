@@ -17,13 +17,14 @@ func main() {
 		"prompt":       "top 3 smartphones in 2025, compare pricing across US marketplaces",
 		"geo_location": "United States",
 		"parse":        true,
+		"callback_url": "https://your-server.com/oxylabs-callback",
 	}
 
 	jsonValue, _ := json.Marshal(payload)
 
 	client := &http.Client{}
 	request, _ := http.NewRequest("POST",
-		"https://realtime.oxylabs.io/v1/queries",
+		"https://data.oxylabs.io/v1/queries",
 		bytes.NewBuffer(jsonValue),
 	)
 
