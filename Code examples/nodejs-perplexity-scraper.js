@@ -6,11 +6,12 @@ const body = {
     source: "perplexity",
     prompt: "top 3 smartphones in 2025, compare pricing across US marketplaces",
     geo_location: "United States",
-    parse: true
+    parse: true,
+    callback_url: "https://your-server.com/oxylabs-callback"
 };
 
 const options = {
-    hostname: "realtime.oxylabs.io",
+    hostname: "data.oxylabs.io",
     path: "/v1/queries",
     method: "POST",
     headers: {
