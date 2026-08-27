@@ -3,7 +3,6 @@ package org.example;
 import okhttp3.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import java.util.concurrent.TimeUnit;
 
 public class Main implements Runnable {
     private static final String AUTHORIZATION_HEADER = "Authorization";
@@ -16,6 +15,7 @@ public class Main implements Runnable {
         jsonObject.put("prompt", "top 3 smartphones in 2025, compare pricing across US marketplaces");
         jsonObject.put("geo_location", "United States");
         jsonObject.put("parse", true);
+        jsonObject.put("callback_url", "https://your-server.com/oxylabs-callback");
 
         Authenticator authenticator = (route, response) -> {
             String credential = Credentials.basic(USERNAME, PASSWORD);
@@ -28,13 +28,12 @@ public class Main implements Runnable {
 
         var client = new OkHttpClient.Builder()
                 .authenticator(authenticator)
-                .readTimeout(180, TimeUnit.SECONDS)
                 .build();
 
         var mediaType = MediaType.parse("application/json; charset=utf-8");
         var body = RequestBody.create(jsonObject.toString(), mediaType);
         var request = new Request.Builder()
-                .url("https://realtime.oxylabs.io/v1/queries")
+                .url("https://data.oxylabs.io/v1/queries")
                 .post(body)
                 .build();
 
