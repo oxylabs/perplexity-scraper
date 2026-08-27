@@ -7,7 +7,7 @@
 
 The [Perplexity Scraper](https://oxylabs.io/products/scraper-api/serp/perplexity) by Oxylabs allows developers to send prompts to Perplexity and automatically collect both AI-generated responses and structured metadata. Instead of just raw HTML, it can also provide results as parsed JSON, website PNG, XHR/Fetch requests, or Markdown output. 
 
-You can use the [Oxylabs’ Web Scraper API](https://oxylabs.io/products/scraper-api) with Perplexity for AI content auditing, research tracking, and analyzing SEO performance. It handles dynamic AI-generated content, fully supports real-time SERP extraction, and integrates seamlessly with Oxylabs' global proxy infrastructure, without the need to manage proxies, browsers, or worry about anti-bot systems.
+You can use the [Oxylabs’ Web Scraper API](https://oxylabs.io/products/scraper-api) with Perplexity for AI content auditing, research tracking, and analyzing SEO performance. It handles dynamic AI-generated content, and integrates seamlessly with Oxylabs' global proxy infrastructure, without the need to manage proxies, browsers, or worry about anti-bot systems.
 
 ## How it works
 
@@ -19,35 +19,32 @@ The Perplexity scraper handles the rendering, parsing, and delivery of results i
 ### Request sample (Python)
 
 ```python
-import json
 import requests
+from pprint import pprint
 
-# API parameters.
+
+# Structure payload.
 payload = {
     'source': 'perplexity',
     'prompt': 'top 3 smartphones in 2025, compare pricing across US marketplaces',
     'geo_location': 'United States',
-    'parse': True
+    'parse': True,
+    'callback_url': 'https://your-server.com/oxylabs-callback'
 }
 
 # Get a response.
 response = requests.post(
-    'https://realtime.oxylabs.io/v1/queries',
+    'https://data.oxylabs.io/v1/queries',
     auth=('USERNAME', 'PASSWORD'),
     json=payload
 )
 
-# Print response to stdout.
-print(response.json())
-
-# Save response to a JSON file.
-with open('response.json', 'w') as file:
-    json.dump(response.json(), file, indent=2)
+# Print prettified response to stdout.
+pprint(response.json())
 ```
 
 More request examples in different programming languages are available [here](https://github.com/oxylabs/perplexity-scraper/tree/main/Code%20examples).
 
-**Note:** By default, all requests to Perplexity use JavaScript rendering. Make sure to set a sufficient timeout (e.g. 180s) when using the Realtime integration method.
 
 ### Request parameters
 
@@ -58,6 +55,7 @@ More request examples in different programming languages are available [here](ht
 | `parse` | Returns parsed data when set to true. | `false` |
 | `geo_location` | Specify a country to send the prompt from. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/features/localization/proxy-location). | – |
 | `callback_url` | URL to your callback endpoint. [More info](https://developers.oxylabs.io/scraping-solutions/web-scraper-api/integration-methods/push-pull#callback). | – |
+| `browser_instructions` | Optional custom browser instructions when rendering JavaScript. | – |
 
 \* Mandatory parameters
 
@@ -195,9 +193,6 @@ Perplexity does not provide a public API for all its features, so scraping falls
 
 No, the Perplexity scraper can return multiple formats depending on your needs. The scraper can return results as raw HTML, structured JSON, Markdown output, website PNG, or capture XHR/Fetch requests.
 
-### What’s the recommended timeout for real-time requests?
-
-Since Perplexity responses are dynamically generated, requests can take longer than standard web scraping. We recommend setting a timeout of at least 180 seconds when using the Realtime integration method to avoid incomplete results. For larger or more complex prompts, consider asynchronous methods like Push-Pull.
 
 ## Learn more
 
