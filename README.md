@@ -169,7 +169,7 @@ Moreover, the `inline_products` array contains products that are directly embedd
 
 ![Embedded results](image-2.png)
 
-[![Oxylabs promo code](https://github.com/oxylabs/perplexity-scraper/blob/main/Github%20repositories%20banner%20v1%402x.png)](https://oxylabs.io/web-api-early-access?&utm_content=web_api_waitinglist&groupid=877)
+[![Oxylabs promo code](https://github.com/oxylabs/perplexity-scraper/blob/main/Github%20repositories%20banner%20v1%402x.png)](https://oxylabs.io/web-api-early-access?utm_source=github&utm_medium=referral&utm_content=web_api_waitinglist&groupid=877)
 
 ## Practical Perplexity scraper use cases
 
